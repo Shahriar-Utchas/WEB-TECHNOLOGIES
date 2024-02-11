@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0; 
+            padding: 0;
+        }
+        body {
+            background-color: rgb(167, 189, 195);
+        }
+        #heading {
+            height: 100px;
+            font-size: 26px ;
+            border: 2px solid blue;
+            color: rgb(0, 0, 0);
+            background-color: rgb(76, 76, 207);
+            padding: 2px 50px 70px 80px;
+            line-height: 90px;
+        }
+        #name {
+            font-family: cursive;
+            font-size: 30px;
+        }
+        .nav {
+            padding-left: 110px;
+        }
+        .nav a {
+            color: rgb(33, 207, 68);      
+        }
+        .nav:hover a { 
+            color: rgb(210, 30, 30);
+            text-decoration: none;
+        }
+        .text-container {
+            max-width: calc(100% - 350px);
+            float: left;
+        }
+        img {
+            height: 400px;
+            width: 350px;
+            float: right;
+        }
+        #hi {
+            
+            font-family: Algerian;
+            font-size: 50px;
+            padding-left: 20px;
+        }
+        #about {
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-size: 18px;
+        }
+        #edu1{
+            color:rgb(41, 85, 88);
+            font-size: 40px;
+        }
+        #edu2{
+            font-size: 24px;
+            padding-left: 120px;
+            margin-top: 40px;
+        }
+        .edu_link:hover a { 
+            color: rgb(210, 30, 30);
+            text-decoration: none;
+        }
+        #br{
+            font-size: 20px;
+        }
+        #result{
+            padding-left: 200px;
+            width: 600px;
+        }
+        #footer {
+            height: 100px;
+            font-size: 26px ;
+            border: 2px solid rgb(0, 0, 0);
+            color: rgb(0, 0, 0);
+            background-color: rgb(0, 0, 0);
+            padding: 2px 50px 70px 80px;
+            line-height: 90px;
+        }
+        .contact{
+            padding-right: 80px;
+        }
+        #face{
+            color: blue;
+            text-decoration: none;
+        }
+        #insta{
+            color: red;
+            text-decoration: none;
+            padding-left: 30px;
+        }
+        #lnk{
+            color: rgb(38, 38, 144);
+            text-decoration: none;
+            padding-left: 30px;
+        }
+        #git{
+            color: rgb(0, 72, 16);
+            text-decoration: none;
+            padding-left: 40px;
+        }
+        #form{
+            padding-left: 10px;
+            width: 1200px;
+        }
+        #submit{
+            color: blue;
+            width: 150px; 
+            height: 50px; 
+            font-size: 20px;
+            margin-top: 10px; 
+            margin-left: 400px;
+        }
+        #contact{
+            color:cadetblue;
+            font-size: 40px;
+        }
+        #skill{
+            color:rgb(41, 85, 88);
+            font-size: 40px;
+        }
+    </style>
+</head>
+<body>
+    <p id="heading"> 
+        <span id="name">Shahriar Utchas</span>
+        <span class="nav"><a href="#">Home</a></span>
+        <span class="nav"><a href="#">Education</a></span>
+        <span class="nav"><a href="#skill">Skills</a></span>
+        <span class="nav"><a href="#contact">Contact me</a></span>
+    </p>
+    <p> 
+        <div class="text-container">
+            <marquee><p><span id="hi"><i>Welcome</i></span></p></marquee>
+            <span id="about">I'm Shahriar Utchas, a Computer Science and Engineering student at American International University-Bangladesh (AIUB). Proficient in C++, Java, and C#, I am on a mission to become a skilled software developer. I am excited about contributing my problem-solving skills and analytical mindset to innovative projects. Open to opportunities and collaborations, let's connect and explore the possibilities about the exciting opportunities in the world of software development!</span>
+        </div>
+        <img src="https://avatars.githubusercontent.com/u/123489314?v=4" alt="me" align="right">
+        <p id="br">&nbsp;</p>
+        <span id="edu1">&nbsp;Education</span>
+        <div id="edu2">
+            <ul>
+                <li>
+                    SSC: &nbsp; <span class="edu_link"> <a href="https://ssaac.edu.bd/" target="_blank">Saffiuddin Sarkar Academy And College</a></span>
+                </li>
+                <br>
+                <li>
+                    HSC:&nbsp; <span class="edu_link"> <a href="https://en.wikipedia.org/wiki/Uttara_High_School_and_College" target="_blank">Uttara High School And College</a></span>
+                </li>
+                <br>
+                <li>
+                    Bsc: &nbsp; <span class="edu_link"> <a href="https://www.aiub.edu/" target="_blank">American International University-Bangladesh</a></span>
+                </li>
+        </ul> 
+        </div>
+    </p>
+    <br>
+    <div id="result">
+    <fieldset>
+        <legend align="center"><font size ="+2">Results</font></legend>
+        <div align ="center">
+            <table>
+                <thead>
+                    <tr>
+                        <th>SSC</th>
+                        <th>HSC</th>
+                        <th>Bsc</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>4.94</td>
+                        <td>5.00</td>
+                        <td>3.56</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        </fieldset>
+    </div>
+    <p id="br">&nbsp;</p>
+    <span id="skill">&nbsp;Skills</span>
+    <div id="edu2">
+        <ol>
+            <li>C</li>
+            <li>C++</li>
+            <li>C#</li>
+            <li>JAVA</li>
+            <li>Python</li>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>PHP</li>
+        </ol>
+    </div>
+    <p id="br">&nbsp;</p>
+    <div id="form">
+    <fieldset>
+        <br><br>
+        <legend id="edu1" class="contact" align="center">Fillup Your Form</legend>
+        <form action="backend.php">
+          <label for="fname"><span id="edu2">Your Full Name&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:</span></label>
+          <input type="text" id="fname" placeholder="Your Name" required>
+              <br><br>
+          <label for="lname"><span id="edu2">Your Phone Number&nbsp;:</span></label>
+          <input type="number" id="lname" placeholder="Phone Number" required>
+              <br><br>
+              <span id="edu2">Review My Page&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:</span>
+         <textarea id="textarea" cols="30" rows="10"></textarea>
+         <br>
+         <input type="submit" value="Submit" id="submit">
+        </form>
+      </fieldset>
+    </div>
+
+
+
+    <p id="br">&nbsp;</p>
+    <p id="footer"> 
+        <span id="contact" class="contact">Contact With Me</span>
+        <a href="https://www.facebook.com/shahriar.utchas" id="face" target="_blank">Facebook</a>
+        ><a href="https://www.instagram.com/_utchas_/" id="insta" target="_blank">Instragram</a>
+        ><a href="https://www.linkedin.com/in/shahriar-utchas/"  id="lnk" target="_blank">Linkedin</a>
+        <a href="https://github.com/Shahriar-Utchas" id="git" target="_blank">GitHub</a>
+    </p>
+</body>
+</html>
