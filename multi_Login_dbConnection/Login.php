@@ -3,12 +3,13 @@
 <head>
     <title>Login</title>
 </head>
-<body>
+<body>  
     <form method="post">
         ID: <br>
         <input type="number" name="id"> <br>
         Password: <br>
-        <input type="password" name="pass"> <br> <br>
+        <input type="password" name="pass"> <br> 
+        <a href="forget.php">forget pass?</a> <br> <br>
         <input type="submit" name="login" value="Log In">
         <button><a href="registation.php">Register</a></button>
         <br>
