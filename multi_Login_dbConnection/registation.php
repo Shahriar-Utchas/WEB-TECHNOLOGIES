@@ -13,6 +13,11 @@
         <input type="Email" name ="mail"><br>
         Password: <br>
         <input type="password" name ="pass"><br>
+        Date of birth: <br>
+        <input type="date" name ="dob"><br> <br>
+        Gender:
+        <input type="radio" name ="gender" value="male">Male
+        <input type="radio" name ="gender" value="female">Female<br> <br>
         <input type="submit" name="register" value ="Register">
         <button><a href="Login.php">Log In</a></button>
     </form>
@@ -20,13 +25,15 @@
     include("database.php"); 
     if(isset($_POST['register'])){
 
-        if(!empty($_POST['user']) && !empty($_POST['id']) && !empty($_POST['mail']) && !empty($_POST['pass'])){
+        if(!empty($_POST['user']) && !empty($_POST['id']) && !empty($_POST['mail']) && !empty($_POST['pass']) && !empty($_POST['dob']) && !empty($_POST['gender'])){
             $user = $_POST['user'];
             $id = $_POST['id'];
             $mail = $_POST['mail'];
             $pass = $_POST['pass'];
+            $dob = $_POST['dob'];
+            $gender = $_POST['gender'];
             
-            $sql ="INSERT INTO user (Name, ID, Email, pass) VALUES ('$user', '$id', '$mail', '$pass')";
+            $sql ="INSERT INTO user (Name, ID, Email, pass, DOB, gender) VALUES ('$user', '$id', '$mail', '$pass', '$dob', '$gender')";
             try{
                 mysqli_query($conn, $sql);
                 echo "User Registered!<br>";
