@@ -18,13 +18,17 @@
     $name = $result["Name"];
     $mail = $result["Email"];
     $pass = $result["pass"];
+    $dob = $result["DOB"];
+    $gender = $result["gender"];
     ?>
     <h1>Welcome <?php echo $name ?> </h1>
      <h3>Here is your Information</h3>
      Name: <?php echo $name ?> <br>
      ID:  <?php echo $id ?> <br>
      E-mail: <?php echo $mail ?> <br>
-     Password:<?php echo $pass ?> <br> <br>
+     Password: <?php echo $pass ?> <br> 
+     Gender: <?php echo $gender ?> <br> 
+     Date of Birth: <?php echo $dob ?> <br> <br>
      <form method="GET">
      <button name="out">Logout</button>
      <button name="edit">Edit</button>
